@@ -24,11 +24,11 @@ import java.lang.annotation.Target;
 import static java.lang.annotation.ElementType.METHOD;
 import static java.lang.annotation.RetentionPolicy.RUNTIME;
 
-/** Make a GET request. */
+/** Make a POST request. */
 @Documented
 @Target(METHOD)
 @Retention(RUNTIME)
-public @interface GET {
+public @interface POST {
   /**
    * A relative or absolute path, or full URL of the endpoint. This value is optional if the first
    * parameter of the method is annotated with {@link Url @Url}.
